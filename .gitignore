@@ -1,0 +1,10 @@
+
+*.dll
+*.pdb
+*.domain
+edtechish/.idea/.idea.edtechish/.idea/aws.xml
+.idea/.idea.edtechish-microservice.dir/.idea/vcs.xml
+.idea/.idea.edtechish-microservice.dir/.idea/indexLayout.xml
+.idea/.idea.edtechish-microservice.dir/.idea/aws.xml
+edtechish/.idea/.idea.edtechish/.idea/indexLayout.xml
+edtechish/.idea/.idea.edtechish/.idea/vcs.xml
