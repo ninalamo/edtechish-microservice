@@ -2,7 +2,7 @@ using System.Diagnostics;
 using MediatR;
 
 namespace edtechish.domain.SeedWork;
-
+ 
 public abstract class Entity<T> where T : struct, IComparable<T>, IEquatable<T>
 {
     int? _requestedHashCode;
