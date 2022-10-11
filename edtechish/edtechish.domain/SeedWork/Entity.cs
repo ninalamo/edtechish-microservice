@@ -6,11 +6,11 @@ namespace edtechish.domain.SeedWork;
 public abstract class Entity<T> where T : struct, IComparable<T>, IEquatable<T>
 {
     int? _requestedHashCode;
-    T _Id;
+    T _id;
     public virtual T Id
     {
-        get => _Id;
-        protected set => _Id = value;
+        get => _id;
+        protected set => _id = value;
     }
 
     private List<INotification> _domainEvents;
@@ -44,7 +44,7 @@ public abstract class Entity<T> where T : struct, IComparable<T>, IEquatable<T>
             }
         }else if (type == typeof(string))
         {
-            return this.Id.ToString() == default;
+            return string.IsNullOrEmpty(this.Id.ToString());
         }else if (type == typeof(char))
         {
             if (char.TryParse(this.Id.ToString(), out var ret))

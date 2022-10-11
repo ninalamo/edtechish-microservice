@@ -8,3 +8,4 @@ edtechish/.idea/.idea.edtechish/.idea/aws.xml
 .idea/.idea.edtechish-microservice.dir/.idea/aws.xml
 edtechish/.idea/.idea.edtechish/.idea/indexLayout.xml
 edtechish/.idea/.idea.edtechish/.idea/vcs.xml
+*.pb
