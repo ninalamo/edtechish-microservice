@@ -10,13 +10,16 @@ public class Person : Entity<Guid>, IAggregateRoot
     
     public DateTime DateOfBirth { get; private set; }
 
+    private int _genderId;
+    public Gender Gender { get; private set; }
+
     #region Ctor
     protected Person()
     {
         
     }
 
-    public Person(string firstName, string lastName, string middleName, DateTime dateOfBirth)
+    public Person(string firstName, string lastName, string middleName, DateTime dateOfBirth, int gender)
     {
         SetName(firstName, lastName, middleName);
         SetDateOfBirth(dateOfBirth);
@@ -32,12 +35,15 @@ public class Person : Entity<Guid>, IAggregateRoot
     }
 
     public void SetDateOfBirth(DateTime dateOfBirth) => DateOfBirth = dateOfBirth;
-    
-    
+
+    public void SetGender(Gender gender) => _genderId = gender.Id;
     
     public string GetFullName() => $"{FirstName} {MiddleName} {LastName}";
-    
+
+    public int GetGender => _genderId;
+
     #endregion
 
-}
 
+
+}
