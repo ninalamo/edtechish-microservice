@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "edtechish.domain", "edtechish.domain\edtechish.domain.csproj", "{02D6BD56-CE36-4ED2-AAF9-E6DDF1B0A6A2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "edtechish.domain", "src\edtechish.domain\edtechish.domain.csproj", "{674BE162-9829-403E-AD01-68348EF1687E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "edtechish.infrastructure", "src\edtechish.infrastructure\edtechish.infrastructure.csproj", "{E716577E-1AF1-47AF-B857-A83073C35038}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -8,9 +10,13 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{02D6BD56-CE36-4ED2-AAF9-E6DDF1B0A6A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{02D6BD56-CE36-4ED2-AAF9-E6DDF1B0A6A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{02D6BD56-CE36-4ED2-AAF9-E6DDF1B0A6A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{02D6BD56-CE36-4ED2-AAF9-E6DDF1B0A6A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{674BE162-9829-403E-AD01-68348EF1687E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{674BE162-9829-403E-AD01-68348EF1687E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{674BE162-9829-403E-AD01-68348EF1687E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{674BE162-9829-403E-AD01-68348EF1687E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E716577E-1AF1-47AF-B857-A83073C35038}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E716577E-1AF1-47AF-B857-A83073C35038}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E716577E-1AF1-47AF-B857-A83073C35038}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E716577E-1AF1-47AF-B857-A83073C35038}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
