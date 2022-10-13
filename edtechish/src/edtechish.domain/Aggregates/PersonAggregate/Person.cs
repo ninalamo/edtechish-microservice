@@ -2,7 +2,7 @@ using edtechish.domain.SeedWork;
 
 namespace edtechish.domain.Aggregates.PersonAggregate;
 
-public class Person : Entity<Guid>, IAggregateRoot
+public class Person : DomainEntity<Guid>, IAggregateRoot
 {
     public string? FirstName { get; private set; }
     public string? LastName { get; private set; }
@@ -14,12 +14,12 @@ public class Person : Entity<Guid>, IAggregateRoot
     public Gender Gender { get; private set; }
 
     #region Ctor
-    protected Person()
+    protected Person() : base()
     {
         
     }
 
-    public Person(string firstName, string lastName, string middleName, DateTime dateOfBirth, int gender)
+    public Person(string firstName, string lastName, string middleName, DateTime dateOfBirth, int gender) : base()
     {
         SetName(firstName, lastName, middleName);
         SetDateOfBirth(dateOfBirth);

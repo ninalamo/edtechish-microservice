@@ -37,7 +37,7 @@ public abstract class Entity<T> where T : struct, IComparable<T>, IEquatable<T>
     }
     
    
-    public override bool Equals(object obj)
+    public override bool Equals(object? obj)
     {
         if (obj is not Entity<T> item)
             return false;

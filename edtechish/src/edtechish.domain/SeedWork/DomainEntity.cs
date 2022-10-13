@@ -9,6 +9,11 @@ public abstract class DomainEntity<T> : Entity<T>, IDomainEvent
     private List<INotification> _domainEvents;
     public IReadOnlyCollection<INotification> DomainEvents => _domainEvents?.AsReadOnly();
 
+    protected DomainEntity() 
+    {
+        _domainEvents = new List<INotification>();
+    }
+
     public void AddDomainEvent(INotification eventItem)
     {
         _domainEvents = _domainEvents ?? new List<INotification>();
